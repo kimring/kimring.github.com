@@ -98,8 +98,8 @@ OpenSpending.DailyBread = function (elem) {
           return _.indexOf(skip, child.name);
         }),
         function(child) {
-          var daily = (child.amount / node.amount);
-        //  var daily = (node.amount == 0)? 0 : (child.amount / node.amount);
+        //  var daily = (child.amount / node.amount);
+          var daily = (node.amount == 0)? 0 : (child.amount / node.amount);
           if (absolute) daily = daily / 365.0;
           return [child.name, child.label, daily, handleChildren(child, false)];
         });
