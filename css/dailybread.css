@@ -146,6 +146,12 @@
   margin-bottom: 0.5em;
 }
 
+.db-area-title.active h3 {
+  font-size: 1.4em;
+  line-height: 1.4em;
+  margin-bottom: 0.5em;
+}
+
 .db-area-col .db-area-icon {
   height: 5em;
   border-right: 1px solid #fff;
